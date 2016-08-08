@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>MediaKraken Multimedia Suite - How it works</title>
+    <meta name="description" content="General Server how-to for MediaKraken multimedia suite.">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="./static/css/web_layout.css" media="all" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </head>
+  <img alt="fs_bg_image" src="./static/images/backdrop.jpg" id="fs_bg_image">
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<h1 align="center" style="color:white;">How the MediaKraken server works.</h1>
+<BR>
+<div class="row-fluid">
+  <div class="col-sm-12">
+    <div class="col-sm-8 col-sm-offset-2">
+        <ul class="nav nav-pills">
+          <li class="active"><a href="http://www.mediakraken.com/index.html">Home</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">How it works
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="http://www.mediakraken.com/client.html">Client</a></li>
+                <li><a href="http://www.mediakraken.com/server.html">Server</a></li>
+                <li><a href="http://www.mediakraken.com/server_slave.html">Slave Server</a></li>
+                <li><a href="http://www.mediakraken.com/server_link.html">Server Link</a></li>
+                <li><a href="http://www.mediakraken.com/metadata.html">Metadata</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Community
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="http://chat.mediakraken.com:3000">Live Chat</a></li>
+                <li><a href="http://forum.mediakraken.com">Forum</a></li>
+            </ul>
+          </li>
+          <li><a href="http://www.mediakraken.com/downloads.html">Downloads</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Development
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="http://www.mediakraken.com/roadmap.html">Roadmap</a></li>
+                <li><a href="http://www.mediakraken.com/dev.html">Contributing</a></li>
+                <li><a href="http://www.mediakraken.com/testing.html">Testing</a></li>
+                <li><a href="http://bugz.mediakraken.com">Bug Tracking</a></li>
+            </ul>
+          </li>
+        </ul>
+    </div>
+  </div>
+</div>
+<div>
+<BR>
+<BR>
+<BR>
+<div class="row-fluid">
+  <div class="col-sm-12">
+    <div class="col-sm-8 col-sm-offset-2">
+        <h2 style="color:white;">How is metadata stored on server(s)</h2>
+        <p style="color:white;" class="indent">The metadata is stored into a 9.5 Postgresql database with json support. This allows new types of information to be stored with no db changes allowing faster implementation of newer features.</p>
+        <BR>
+        <h2 style="color:white;">How it works:</h2>
+        <ul style="color:white;">
+        <li>The brains of the operation which all clients and slaves connect too.
+        <li>This stores the central database which holds all the user and metadata. 
+        <li>Runs batch jobs to collect and process media and metadata.
+        <li>Sends transcoding jobs to slave servers if CPU utilization suggests it.
+        <li>Transcoding via FFMPEG
+        <li>Web interface
+        </ul>
+    </div>
+  </div>
+</div>
+</html>

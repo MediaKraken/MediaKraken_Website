@@ -1,2 +1,2 @@
-# MediaKraken_Website
-MediaKraken Website
+# Media Kraken Website
+Website code for www.mediakraken.org
