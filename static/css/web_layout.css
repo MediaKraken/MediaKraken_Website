@@ -63,6 +63,8 @@ p.description_content_left{
 
 .tab { margin-left: 40px; }
 
+.ident { text-indent: 50px; }
+
 img.center {
   display: block;
   margin-left: auto;
