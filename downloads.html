@@ -1,4 +1,5 @@
 <html>
+<body id="data_background">
   <head>
     <meta charset="UTF-8"/>
     <title>MediaKraken Multimedia Suite - Downloads</title>
@@ -11,7 +12,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   </head>
-  <img alt="fs_bg_image" src="./static/images/backdrop.jpg" id="fs_bg_image">
 <BR>
 <BR>
 <BR>
@@ -20,55 +20,15 @@
 <BR>
 <h1 align="center" style="color:white;">MediaKraken application suite downloads.</h1>
 <BR>
-<div class="row-fluid">
-  <div class="col-sm-12">
-    <div class="col-sm-8 col-sm-offset-2">
-        <ul class="nav nav-pills">
-          <li class="active"><a href="http://www.mediakraken.com/index.html">Home</a></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">How it works
-            <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-                <li><a href="http://www.mediakraken.com/client.html">Client</a></li>
-                <li><a href="http://www.mediakraken.com/server.html">Server</a></li>
-                <li><a href="http://www.mediakraken.com/server_slave.html">Slave Server</a></li>
-                <li><a href="http://www.mediakraken.com/server_link.html">Server Link</a></li>
-                <li><a href="http://www.mediakraken.com/metadata.html">Metadata</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Community
-            <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-                <li><a href="http://chat.mediakraken.com:3000">Live Chat</a></li>
-                <li><a href="http://forum.mediakraken.com">Forum</a></li>
-            </ul>
-          </li>
-          <li><a href="http://www.mediakraken.com/downloads.html">Downloads</a></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Development
-            <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-                <li><a href="http://www.mediakraken.com/roadmap.html">Roadmap</a></li>
-                <li><a href="http://www.mediakraken.com/dev.html">Contributing</a></li>
-                <li><a href="http://www.mediakraken.com/testing.html">Testing</a></li>
-                <li><a href="http://bugz.mediakraken.com">Bug Tracking</a></li>
-            </ul>
-          </li>
-        </ul>
-    </div>
-  </div>
-</div>
-<div>
+<div id="header"></div>
 <BR>
 <BR>
 <BR>
 </ul>
 <div class="row-fluid">
   <div class="col-sm-12">
-    <div class="col-sm-8 col-sm-offset-2">
+    <div class="col-sm-10 col-sm-offset-1">
         <ul style="color:white">
-
 
         <li>Mobile Clients:
         <div class="row">
@@ -77,7 +37,7 @@
               <img alt="android" src="./static/images/platforms/android.png" id="andoid_image" width=180>
               <div class="caption">
                 <h3>Android</h3>
-                <p>Phone and tablet support. No subscription or unlock required.</p>
+                <p>Phone and tablet support. No subscription or unlock required. Available as APK or via the Google Play store.</p>
                 <p><a href="#" class="btn btn-primary" role="button">Info</a> <a href="#" class="btn btn-default" role="button">Download</a></p>
               </div>
             </div>
@@ -87,7 +47,7 @@
               <img alt="ios" src="./static/images/platforms/ios.png" id="ios_image" width=180>
               <div class="caption">
                 <h3>iOS</h3>
-                <p>Phone support. No subscription or unlock required.</p>
+                <p>Phone support. No subscription or unlock required. Available via the Apple App Store or sideload.</p>
                 <p><a href="#" class="btn btn-primary" role="button">Info</a> <a href="#" class="btn btn-default" role="button">Download</a></p>
               </div>
             </div>
@@ -212,7 +172,6 @@
           </div>
         </div>
 
-
         <li>Slave:
         <div class="row">
           <div class="col-sm-3 col-md-3">
@@ -261,12 +220,18 @@
                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Download<span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a href="http://www.mediakraken.com/client.html">ISO - Alpine 3.4 x64</a></li>
-                        <li><a href="http://www.mediakraken.com/server.html">Clonezilla - Alpine 3.4 x64</a></li>
-                        <li><a href="http://www.mediakraken.com/server_slave.html">ESXi 5.x - Alpine 3.4 x64</a></li>
-                        <li><a href="http://www.mediakraken.com/server_link.html">ESXi 6.x - Alpine 3.4 x64</a></li>
-                        <li><a href="http://www.mediakraken.com/metadata.html">Virtualbox 5.x - Alpine 3.4 x64</a></li>
-                        <li><a href="http://www.mediakraken.com/metadata.html">Proxmox 4.2 - Alpine 3.4 x64</a></li>
+                        <li><a href="http://www.mediakraken.com/download/MediaKraken_Server_ISO_Alpine_0.1.5.ova">ISO - Alpine 3.4 x64</a></li>
+                        <li><a href="http://www.mediakraken.com/download/MediaKraken_Server_ISO_Ubuntu_0.1.5.ova">ISO - Ubuntu 16.04 x64</a></li>
+                        <li><a href="http://www.mediakraken.com/download/MediaKraken_Server_CZ_Alpine_0.1.5.ova">Clonezilla - Alpine 3.4 x64</a></li>
+                        <li><a href="http://www.mediakraken.com/download/MediaKraken_Server_CZ_Ubuntu_0.1.5.ova">Clonezilla - Ubuntu 16.04 x64</a></li>
+                        <li><a href="http://www.mediakraken.com/download/MediaKraken_Server_5.x_OVA_Alpine_0.1.5.ova">ESXi 5.x - Alpine 3.4 x64</a></li>
+                        <li><a href="http://www.mediakraken.com/download/MediaKraken_Server_5.x_OVA_Ubuntu_0.1.5.ova">ESXi 5.x - Ubuntu 16.04 x64</a></li>
+                        <li><a href="http://www.mediakraken.com/download/MediaKraken_Server_6.x_OVA_Alpine_0.1.5.ova">ESXi 6.x - Alpine 3.4 x64</a></li>
+                        <li><a href="http://www.mediakraken.com/download/MediaKraken_Server_6.x_OVA_Ubuntu_0.1.5.ova">ESXi 6.x - Ubuntu 16.04 x64</a></li>
+                        <li><a href="http://www.mediakraken.com/download/MediaKraken_Server_VB_OVA_Alpine_0.1.5.ova">Virtualbox 5.x - Alpine 3.4 x64</a></li>
+                        <li><a href="http://www.mediakraken.com/download/MediaKraken_Server_VB_OVA_Ubuntu_0.1.5.ova">Virtualbox 5.x - Ubuntu 16.04 x64</a></li>
+                        <li><a href="http://www.mediakraken.com/download/MediaKraken_Server_Proxmox_OVA_Alpine_0.1.5.ova">Proxmox 4.2 - Alpine 3.4 x64</a></li>
+                        <li><a href="http://www.mediakraken.com/download/MediaKraken_Server_Proxmox_OVA_Ubuntu_0.1.5.ova">Proxmox 4.2 - Ubuntu 16.04 x64</a></li>
                     </ul>
                   </div>
                 </p>
@@ -284,12 +249,18 @@
                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Download<span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a href="http://www.mediakraken.com/client.html">ISO - Alpine 3.4 x64</a></li>
-                        <li><a href="http://www.mediakraken.com/server.html">Clonezilla - Alpine 3.4 x64</a></li>
-                        <li><a href="http://www.mediakraken.com/server_slave.html">ESXi 5.x - Alpine 3.4 x64</a></li>
-                        <li><a href="http://www.mediakraken.com/server_link.html">ESXi 6.x - Alpine 3.4 x64</a></li>
-                        <li><a href="http://www.mediakraken.com/metadata.html">Virtualbox 5.x - Alpine 3.4 x64</a></li>
-                        <li><a href="http://www.mediakraken.com/metadata.html">Proxmox 4.2 - Alpine 3.4 x64</a></li>
+                        <li><a href="http://www.mediakraken.com/download/MediaKraken_Slave_ISO_Alpine_0.1.5.ova">ISO - Alpine 3.4 x64</a></li>
+                        <li><a href="http://www.mediakraken.com/download/MediaKraken_Slave_ISO_Ubuntu_0.1.5.ova">ISO - Ubuntu 16.04 x64</a></li>
+                        <li><a href="http://www.mediakraken.com/download/MediaKraken_Slave_CZ_Alpine_0.1.5.ova">Clonezilla - Alpine 3.4 x64</a></li>
+                        <li><a href="http://www.mediakraken.com/download/MediaKraken_Slave_CZ_Ubuntu_0.1.5.ova">Clonezilla - Ubuntu 16.04 x64</a></li>
+                        <li><a href="http://www.mediakraken.com/download/MediaKraken_Slave_5.x_OVA_Alpine_0.1.5.ova">ESXi 5.x - Alpine 3.4 x64</a></li>
+                        <li><a href="http://www.mediakraken.com/download/MediaKraken_Slave_5.x_OVA_Ubuntu_0.1.5.ova">ESXi 5.x - Ubuntu 16.04 x64</a></li>
+                        <li><a href="http://www.mediakraken.com/download/MediaKraken_Slave_6.x_OVA_Alpine_0.1.5.ova">ESXi 6.x - Alpine 3.4 x64</a></li>
+                        <li><a href="http://www.mediakraken.com/download/MediaKraken_Slave_6.x_OVA_Ubuntu_0.1.5.ova">ESXi 6.x - Ubuntu 16.04 x64</a></li>
+                        <li><a href="http://www.mediakraken.com/download/MediaKraken_Slave_VB_OVA_Alpine_0.1.5.ova">Virtualbox 5.x - Alpine 3.4 x64</a></li>
+                        <li><a href="http://www.mediakraken.com/download/MediaKraken_Slave_VB_OVA_Ubuntu_0.1.5.ova">Virtualbox 5.x - Ubuntu 16.04 x64</a></li>
+                        <li><a href="http://www.mediakraken.com/download/MediaKraken_Slave_Proxmox_OVA_Alpine_0.1.5.ova">Proxmox 4.2 - Alpine 3.4 x64</a></li>
+                        <li><a href="http://www.mediakraken.com/download/MediaKraken_Slave_Proxmox_OVA_Ubuntu_0.1.5.ova">Proxmox 4.2 - Ubuntu 16.04 x64</a></li>
                     </ul>
                   </div>
                 </p>
@@ -301,4 +272,10 @@
     </div>
   </div>
 </div>
+<div id="footer"></div>
+<script>
+$("#header").load("header.html");
+$("#footer").load("footer.html");
+</script>
+</body>
 </html>
