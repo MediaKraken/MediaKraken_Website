@@ -1,0 +1,58 @@
+<html>
+<body id="data_background">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>MediaKraken Multimedia Suite - Media Matching</title>
+    <meta name="description" content="Describes the process of media matching for MediaKraken multimedia suite.">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="./static/css/web_layout.css" media="all" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </head>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<h1 align="center" style="color:white;">How media matching works in MediaKraken.</h1>
+<BR>
+<div id="header"></div>
+<BR>
+<BR>
+<BR>
+<div class="row-fluid">
+  <div class="col-sm-12">
+    <div class="col-sm-8 col-sm-offset-2">
+        <h2 style="color:white;">How is metadata managed by MediaKraken</h2>
+        <ul style="color:white;">
+        <li><b>theMovieDB</b>
+        <ul>
+        <li>All metadata is stored in mm_metadata_movie as json.
+        <li>Metadata is automatically udpated every 24 hours via theMovieDB API (updates and new records).
+        <li>Metadata is downloaded individually for each media match during a media scan.
+        <li>Metadata can be bulk downloaded via seperate program.
+        </ul>
+        </ul>
+        <ul style="color:white;">
+        <li><b>theTVDB</b> and <b>TVMaze</b>
+        <ul>
+        <li>All metadata is stored in mm_metadata_tvshow as json at the "show" level
+        <li>Episode data is within the actual show json
+        <li>Metadata is automatically udpated every 24 hours via theTVDB API and TVMaze API (updates and new records).
+        <li>Metadata is downloaded individually for each media match during a media scan.
+        <li>Metadata can be bulk downloaded via seperate programs.
+        </ul>
+        </ul>
+    </div>
+  </div>
+</div>
+<div id="footer"></div>
+<script>
+$("#header").load("header.html");
+$("#footer").load("footer.html");
+</script>
+</body>
+</html>

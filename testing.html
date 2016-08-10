@@ -1,0 +1,87 @@
+<html>
+<body id="data_background">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>MediaKraken Multimedia Suite - How testing works</title>
+    <meta name="description" content="General Server how-to for MediaKraken multimedia suite.">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="./static/css/web_layout.css" media="all" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </head>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<h1 align="center" style="color:white;">MediaKraken testing page.</h1>
+<BR>
+<div id="header"></div>
+<BR>
+<BR>
+<BR>
+<div class="row-fluid">
+  <div class="col-sm-12">
+    <div class="col-sm-8 col-sm-offset-2">
+        <b style="color:white;">alpha testing.....only the posted OVA!!</b>
+        <br>
+        <ul style="color:white;">
+        <li>Grab OVA for linux version you want from downloads on website.
+        <li>Install and config resources
+        <ul>
+        <li>MediaKraken threads and/or subprograms alot....so, it'll use alot of cores if available
+        <li>Postgresql caching/etc will use memory.....give er hell
+        <li>LVM configured on both versions if you need more space
+        </ul>
+        <br>
+        <li>OS User: metaman
+        <li>OS Password: metaman
+        <li>"sudo" before everything (for now)
+        <li>To startup everything.....
+        <ul>
+        <li>cd /home/metaman/github/MediaKraken_Server
+        <li>python main.py
+        </ul>
+        <br>
+        <li>General use for now.....
+        <ul>
+        <li>Web interface will be http://installedhost:8080 (no ssl for now)
+        <ul>
+        <li>User: metaman
+        <li>Password: metaman
+        <ul>
+        <li>This user is an admin so the admin header is available
+        </ul>
+        </ul>
+        <li>Select Server then Library to add media directories (currently have to type path)
+        <li>When done adding media directories, hit scan
+        <ul>
+        <li>Wait till scan is done......can see when notice shows up in admin screen
+        </ul>
+        </ul>
+        <br>
+        <li>Metadata menu
+        <ul>
+        <li>Shows metadata that's in the database
+        <li>Has nothing to do with matched media (that's probably why it downloaded though)
+        </ul>
+        <br>
+        <li>Media
+        <ul>
+        <li>This is where matched media is available to browse
+        <li>Don't bother hitting "Play" button, you'll only want to curse my name more than usual
+        </ul>
+        </ul>
+    </div>
+  </div>
+</div>
+<div id="footer"></div>
+<script>
+$("#header").load("header.html");
+$("#footer").load("footer.html");
+</script>
+</body>
+</html>
