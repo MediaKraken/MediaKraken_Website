@@ -38,6 +38,16 @@
         <li>Transcoding via FFMPEG
         <li>Web interface
         </ul>
+        <h2 style="color:white;">Server Limits:</h2>
+        <ul style="color:white;">
+        <li>Total number of active and inactive users = 2,147,483,647
+        <li>Active live TV channels = 5,000
+        <li>Theoretical Limits
+        <ul style="color:white;">
+        <li>Movies, TV Shows, Songs, People, etc all use their own metadata table. Each table is limited to 32TB in size in Postgresql 9.5. This averages out to hundreds of millions of items each.
+        <li>Records that point to the media file itself is limited to 32TB in size in Postgresl 9.5 as well. This should easily hold over 500 million items.
+        </ul>
+        </ul>
     </div>
   </div>
 </div>
