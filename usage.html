@@ -1,0 +1,63 @@
+<html>
+<body id="data_background">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>MediaKraken Multimedia Suite - Usage</title>
+    <meta name="description" content="General how-to for MediaKraken multimedia suite.">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="./static/css/web_layout.css" media="all" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </head>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<h1 align="center" style="color:white;">How the MediaKraken system works.</h1>
+<BR>
+<div id="header"></div>
+<BR>
+<BR>
+<BR>
+<div class="row-fluid">
+  <div class="col-sm-12">
+    <div class="col-sm-8 col-sm-offset-2">
+        <h2 style="color:white;">Installation and server setup</h2>
+        <p style="color:white;" class="indent">Decide if you wish to run an OVA on VMWare or simply run Docker and Docker Compose on your OS of choice..</p>
+        <ul style="color:white;">
+        <li>Download an OVA for VMWare 5.x+ or a Docker Compose yaml file. These are available on the <a href="http://www.mediakraken.org/downloads.html">downloads</a> page.
+        <ul>
+        <li>If using own OS, install <a href="https://www.docker.com/">Docker</a> and <a href="https://docs.docker.com/compose/">Docker Compose</a>. Must install version 1.12 or greater for the new swarm version.
+        </ul>
+        <li>In mediakraken directory edit the "hidden" .env file.
+        <ul style="color:white;">
+        <li>Setup the database host/user/password
+        <ul>
+        <li>If using the built-in database simply change DBPASS to whatever you like. (Random chars/numbers is good)
+        <li>If wish to use external postgresql 9.6+ database; change host, database, user, password
+        </ul>
+        <li>If using a local MusicBrainz mirror, change the BRAINZCODE
+        </ul>
+        <li>In mediakraken directory run "docker-compose up -d".
+        <li>Browse to the host that you're running the server on "http://hostname:8900"
+        </ul>
+        <BR>
+        <h2 style="color:white;">Installation of client(s) and setup:</h2>
+        <ul style="color:white;">
+        <li>These are available on the <a href="http://www.mediakraken.org/downloads.html">downloads</a> page.
+        </ul>
+
+    </div>
+  </div>
+</div>
+<div id="footer"></div>
+<script>
+$("#header").load("header.html");
+$("#footer").load("footer.html");
+</script>
+</body>
+</html>
