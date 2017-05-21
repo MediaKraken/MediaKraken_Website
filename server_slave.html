@@ -29,9 +29,12 @@
         <h2 style="color:white;">What the slave server(s) do</h2>
         <BR>
         <ul style="color:white;">
-        <li>Slaves will connect to the central server by TCP/IP
-        <li>This will do transcoding via FFMPEG if told to by the central server.
-        <li>Run as many as you want.
+        <li>Run as many as you want via Docker Swarm mode.
+        <ul>
+        <li>The server will fire up a new instance for each media file selected to play
+        <li>This will allow Docker to load balance itself across the cluster.
+        </ul>
+        <li>This will do transcoding via FFMPEG or streaming if told to by the central server.
         </ul>
     </div>
   </div>

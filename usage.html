@@ -27,7 +27,7 @@
   <div class="col-sm-12">
     <div class="col-sm-8 col-sm-offset-2">
         <h2 style="color:white;">Installation and server setup</h2>
-        <p style="color:white;" class="indent">Decide if you wish to run an OVA on VMWare or simply run Docker and Docker Compose on your OS of choice..</p>
+        <p style="color:white;" class="indent">Decide if you wish to run an OVA on VMWare, ProxMox, VirtualBox or simply run Docker and Docker Compose on your OS of choice.</p>
         <ul style="color:white;">
         <li>Download an OVA for VMWare 5.x+ or a Docker Compose yaml file. These are available on the <a href="http://www.mediakraken.org/downloads.html">downloads</a> page.
         <ul>
@@ -38,21 +38,13 @@
         <li>Setup the database host/user/password
         <ul>
         <li>If using the built-in database simply change DBPASS to whatever you like. (Random chars/numbers is good)
-        <li>If wish to use external Postgresql 9.6+ database; change host, database, user, password
+        <li>If wish to use external postgresql 9.5+ database; change host, database, user, password
         </ul>
         <li>If using a MusicBrainz account, change the BRAINZCODE
         </ul>
         <li>In mediakraken directory run "docker-compose up -d".
         <li>Browse to the host that you're running the server on "http://hostname:8900"
-	<li>Setup initial account. This account will be an administrator.
-	<ul>
-	<li>Click "sign-up" and register a new account.
-	<li>Sign in with your new account
-	</ul>
-	<li>Setup your server environment
-	<ul>
-	<li>Click on "Server" in top main menu (this will only show up for administrators)
-	<ul>
+        <ul>
 	<li>Shows tool links along with server information, notices, media counts along with stream and scan status's
 	</ul>
 	</ul>
