@@ -34,9 +34,9 @@
 <h2 style="color:white;">Features:</h2>
 <UL style="color:white">
 <LI>100% Open Source, no "premium", paid betas, restricted access or other nonsense.
-<LI>Native server for MacOSX, Linux and Windows (no Mono or Wine)
+<LI>Native server will run under MacOSX, Linux and Windows via Docker
 <LI>Native client support for Android, iOS, MacOSX, Linux and Windows
-<LI>"Slave" servers for streaming to balance the load with many clients streaming at once
+<LI>"Slave" servers for streaming to balance the load with many clients streaming at once via Docker Swarm
 <li>"Link" servers together so they can display each others media
 <LI>Central database implemented via Postgresql 9.5+
 <li>Remote control software to run on a touch tablet/phone
@@ -47,21 +47,21 @@
     <li>img file for Raspberry Pi 1/2/3 (Linux based)
     <li>ISO/img for install on dedicated client hardware (Linux based)
     </UL>
-<LI>Server:
+<LI>Server: All server images are simply Alpine Linux with Docker and Docker Compose with the images downloaded for immediate use.
     <UL>
-    <li>OVA for VMWare 5.x or 6.x (Linux based)
-    <li>OVA for VirtualBox 5.x (Linux Based)
-    <li>OVA for Proxmox VE 4.2 (Linux Based)
-    <li>64-bit ISO/img for install on dedicated server hardware (Linux based)
+    <li>OVA for VMWare 5.x or 6.x
+    <li>OVA for VirtualBox 5.x
+    <li>OVA for Proxmox VE 4.2
+    <li>64-bit ISO/img for install on dedicated server hardware
     </ul>
 <li>Offsite Storage Support:
 <ul>
-    <li>Dropbox - in progress
-    <li>Google Drive - in progress
     <li>AWS S3
-    <li>OneDrive - in progress
     <li>Backblaze - in progress
     <li>Crashplan - in progress
+    <li>Dropbox - in progress
+    <li>Google Drive - in progress
+    <li>OneDrive - in progress
 </ul>
 </u>
 </UL>

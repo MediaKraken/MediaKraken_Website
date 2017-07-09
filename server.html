@@ -27,7 +27,7 @@
   <div class="col-sm-12">
     <div class="col-sm-8 col-sm-offset-2">
         <h2 style="color:white;">How is metadata stored on server(s)</h2>
-        <p style="color:white;" class="indent">The metadata is stored into a 9.5 Postgresql database with json support. This allows new types of information to be stored with no db changes allowing faster implementation of newer features.</p>
+        <p style="color:white;" class="indent">The metadata is stored into a 9.5+ Postgresql database with json support. This allows new types of information to be stored with no db changes allowing faster implementation of newer features.</p>
         <BR>
         <h2 style="color:white;">How it works:</h2>
         <ul style="color:white;">
@@ -37,6 +37,7 @@
         <li>Sends transcoding jobs to slave servers if CPU utilization suggests it.
         <li>Transcoding via FFMPEG
         <li>Web interface
+	<li>Hardware based transcoding acceleration via NVidia Cuda (work in progress)
         </ul>
         <h2 style="color:white;">Server Limits:</h2>
         <ul style="color:white;">
@@ -45,7 +46,7 @@
         <li>Theoretical Limits
         <ul style="color:white;">
         <li>Movies, TV Shows, Songs, People, etc all use their own metadata table. Each table is limited to 32TB in size in Postgresql 9.5. This averages out to hundreds of millions of items each.
-        <li>Records that point to the media file itself is limited to 32TB in size in Postgresl 9.5 as well. This should easily hold over 500 million items.
+        <li>Records that point to the media file itself is limited to 32TB in size in Postgresl 9.5 as well. This should easily hold over 500 million items. If you break this limit I can only assume you wear an eyepatch and yell "arrrrr" every once in awhile.
         </ul>
         </ul>
     </div>
