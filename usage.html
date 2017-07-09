@@ -30,6 +30,7 @@
         <p style="color:white;" class="indent">Decide if you wish to run an OVA on VMWare, ProxMox, VirtualBox or simply run Docker and Docker Compose on your OS of choice.</p>
         <ul style="color:white;">
         <li>Download an OVA for VMWare 5.x+ or a Docker Compose yaml file. These are available on the <a href="http://www.mediakraken.org/downloads.html">downloads</a> page.
+	<li>NOTE: Only the Docker Compose download is up to date!
         <ul>
         <li>If using own OS, install <a href="https://www.docker.com/">Docker</a> and <a href="https://docs.docker.com/compose/">Docker Compose</a>. Must install version 1.12 or greater for the new swarm version.
         </ul>
@@ -40,11 +41,11 @@
         <li>If using the built-in database simply change DBPASS to whatever you like. (Random chars/numbers is good)
         <li>If wish to use external postgresql 9.5+ database; change host, database, user, password
         </ul>
-        <li>If using a MusicBrainz account, change the BRAINZCODE
+        <li>If using a MusicBrainz account, change the BRAINZCODE (NOTE: This is not used yet!)
         </ul>
-        <li>In mediakraken directory run "docker-compose up -d".
+        <li>In mediakraken directory run "docker-compose up -d" or can simply run "mediakraken_start.sh" if running on Linux host.
         <li>Browse to the host that you're running the server on port 8900.  Ex. "http://hostname:8900"
-        <li>Setup initial account. This account will be an administrator.
+        <li>Setup initial account. This account will automatically be set to an administrator account.
         <ul>
         <ul>
         <li>Click "sign-up" and register a new account.
@@ -55,6 +56,11 @@
         <li>Click on "Server" in top main menu (this will only show up for administrators)
         <ul>
         <li>Shows tool links along with server information, notices, media counts along with stream and scan status's.
+	<ul>
+	<li>Add media via the Library link
+	<li>After adding all media click the "Library Scan" button.
+	<li>Scanning updates will show in the "Server" tab
+	</ul>
         </ul>
         </ul>
         </ul>
